@@ -4482,7 +4482,7 @@ blockquote footer cite:before {
   position: absolute;
   top: calc(50% - 0.35rem);
   color: #f47466;
-  content: '\f0c1';
+  content: '\f863';
   line-height: 1;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
