@@ -127,9 +127,13 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
     content: "⊙ ";
 }
 
-#web_bg {
-    background: var(--card-bg) !important; /* 慎用!important */
-  }
+
+
+
+
+
+
+
 
 /* 博主昵称颜色 */
 .author-info__name {
