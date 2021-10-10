@@ -36,7 +36,7 @@
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo make modules_install // 安装那些之前启用的模块</span><br></pre></td></tr></table></figure>
 
-<p>![](<a href="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/%E6%88%AA%E5%B1%8F2021-10-07">https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/截屏2021-10-07</a> 上午2.09.09.png)</p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%882.09.09.png"></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo make install //安装内核</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%882.10.31.png"></p>
