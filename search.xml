@@ -48,15 +48,15 @@
 <h1 id="踩坑记录"><a href="#踩坑记录" class="headerlink" title="踩坑记录"></a>踩坑记录</h1><h2 id="make的时候提示debian-canonical-certs-pem"><a href="#make的时候提示debian-canonical-certs-pem" class="headerlink" title="make的时候提示debian/canonical-certs.pem"></a>make的时候提示debian/canonical-certs.pem</h2><blockquote>
 <p>没有规则可制作目标“debian/canonical-certs.pem”，由“certs/x509_certificate_list” 需求。 停止。<br>[Makefile:1858：certs] 错误 2</p>
 </blockquote>
-<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211010225345232.png" alt="image-20211010225345232"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211010225345232.png"></p>
 <p>这个坑可以用下面这个方法解决：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim .config</span><br></pre></td></tr></table></figure>
 
 <p>然后在vim的正常模式下直接输入<code>/debian</code>然后回车就能定位到这个字符串上，把该字符串的值改为空</p>
-<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211010225809246.png" alt="image-20211010225809246"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211010225809246.png"></p>
 <p>然后用<code>:w !sudo tee %</code>强行保存修改，最后<code>:q!</code>就好了</p>
-<h2 id="make次数过多导致No-space-left-on-device"><a href="#make次数过多导致No-space-left-on-device" class="headerlink" title="make次数过多导致No space left on device"></a>make次数过多导致No space left on device</h2><p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211010230837626.png" alt="image-20211010230837626"></p>
-<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211010230904891.png" alt="image-20211010230904891"></p>
+<h2 id="make次数过多导致No-space-left-on-device"><a href="#make次数过多导致No-space-left-on-device" class="headerlink" title="make次数过多导致No space left on device"></a>make次数过多导致No space left on device</h2><p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211010230837626.png"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211010230904891.png"></p>
 <blockquote>
 <p>通过这个文章解决的<a href="https://www.cnblogs.com/kaishirenshi/p/11343983.html">https://www.cnblogs.com/kaishirenshi/p/11343983.html</a></p>
 </blockquote>
