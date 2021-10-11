@@ -15,7 +15,7 @@
 
 <h3 id="安装编译环境"><a href="#安装编译环境" class="headerlink" title="安装编译环境"></a>安装编译环境</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison</span><br></pre></td></tr></table></figure>
 
-<h3 id="解压源码"><a href="#解压源码" class="headerlink" title="解压源码"></a>解压源码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo tar xvJf linux-5.14.9.tar.gz //先用cp命令拷贝到usr/src/再解压</span><br></pre></td></tr></table></figure>
+<h3 id="解压源码"><a href="#解压源码" class="headerlink" title="解压源码"></a>解压源码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo tar xvJf linux-5.14.9.tar.xz //先用cp命令拷贝到usr/src/再解压</span><br></pre></td></tr></table></figure>
 
 <h2 id="配置内核"><a href="#配置内核" class="headerlink" title="配置内核"></a>配置内核</h2><blockquote>
 <p>以下的命令不出意外都需要在前面加<code>sudo</code></p>
@@ -49,7 +49,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo update-grub</span><br></pre></td></tr></table></figure>
 
 <p>然后就可以重启系统了</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br><span class="line">uname -r //重启完可以用这个看看当前内核</span><br></pre></td></tr></table></figure>
 
 <h1 id="踩坑记录"><a href="#踩坑记录" class="headerlink" title="踩坑记录"></a>踩坑记录</h1><h2 id="make的时候提示debian-canonical-certs-pem"><a href="#make的时候提示debian-canonical-certs-pem" class="headerlink" title="make的时候提示debian/canonical-certs.pem"></a>make的时候提示debian/canonical-certs.pem</h2><blockquote>
 <p>没有规则可制作目标“debian/canonical-certs.pem”，由“certs/x509_certificate_list” 需求。 停止。<br>[Makefile:1858：certs] 错误 2</p>
