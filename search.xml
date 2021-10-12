@@ -30,8 +30,12 @@
 <blockquote>
 <p><em><strong><u><a href="#%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95">建议先看看下面的坑</a>,看完可以省事！</u></strong></em></p>
 </blockquote>
-<h3 id="编译和安装"><a href="#编译和安装" class="headerlink" title="编译和安装"></a>编译和安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo time make -j8 //最好在前面加time,统计一下时间</span><br></pre></td></tr></table></figure>
+<h3 id="编译和安装"><a href="#编译和安装" class="headerlink" title="编译和安装"></a>编译和安装</h3><p>这里需要的时间是最多的，我给了8g内存给虚拟机，cpu占用59%，最后跑了55分钟</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo time make -jn //最好在前面加time,统计一下时间</span><br></pre></td></tr></table></figure>
 
+<blockquote>
+<p><a href="https://blog.csdn.net/zl3090/article/details/89303583?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-0.no_search_link&spm=1001.2101.3001.4242">这里贴一下网上搜到的对-jn的理解</a>，总结来说就是n一般是cpu核心数量的两倍</p>
+</blockquote>
 <p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%8812.20.03.png"></p>
 <p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%882.03.48.png"></p>
 <blockquote>
@@ -61,11 +65,15 @@
 <p>然后在vim的正常模式下直接输入<code>/debian</code>然后回车就能定位到这个字符串上，把该字符串的值改为空</p>
 <p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211010225809246.png"></p>
 <p>然后用<code>:w !sudo tee %</code>强行保存修改，最后<code>:q!</code>就好了</p>
-<h2 id="make次数过多导致No-space-left-on-device"><a href="#make次数过多导致No-space-left-on-device" class="headerlink" title="make次数过多导致No space left on device"></a>make次数过多导致No space left on device</h2><p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211010230837626.png"></p>
+<h2 id="make次数过多导致No-space-left-on-device"><a href="#make次数过多导致No-space-left-on-device" class="headerlink" title="make次数过多导致No space left on device"></a>make次数过多导致No space left on device</h2><blockquote>
+<p>嗨呀，这个问题的根本原因就是虚拟机空间给少了，下面的方法只能缓解一下，建议扩容</p>
+<p><a href="https://blog.csdn.net/orange_612/article/details/79597905">这里是网上搜的扩容教程</a>，没实践过，请自行操作</p>
+</blockquote>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211010230837626.png"></p>
 <p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211010230904891.png"></p>
 <blockquote>
 <p>通过这个文章解决的<a href="https://www.cnblogs.com/kaishirenshi/p/11343983.html">https://www.cnblogs.com/kaishirenshi/p/11343983.html</a></p>
-<p>**<u>/dev/mapper/好像是Linux的根目录，没去查证</u>**，所以不是Ubuntu的如果是这个路径出问题的，<del>应该也是这样解决吧</del></p>
+<p>**<u>/dev/mapper/是挂载在Linux的根目录的（Mounted on /）</u>**，所以不是Ubuntu的如果是这个路径出问题的，<del>应该也是这样解决吧</del></p>
 </blockquote>
 <h3 id="可以清理一下-dev-loop"><a href="#可以清理一下-dev-loop" class="headerlink" title="可以清理一下/dev/loop*"></a>可以清理一下/dev/loop*</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt autoremove --purge snapd</span><br></pre></td></tr></table></figure>
 
