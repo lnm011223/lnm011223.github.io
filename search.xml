@@ -150,4 +150,26 @@
         <tag>电影</tag>
       </tags>
   </entry>
+  <entry>
+    <title>FineWeather开发记录</title>
+    <url>/2021/10/17/weather/</url>
+    <content><![CDATA[<h1 id="FineWeather开坑记录"><a href="#FineWeather开坑记录" class="headerlink" title="FineWeather开坑记录"></a>FineWeather开坑记录</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>九月份看完了郭霖大神的第一行代码，然后跟着书里的实战敲了一个天气app，但是感觉过于简陋，考虑到天气能锻炼到地方还挺多，于是打算自己开个坑。因为本人是美化爱好者，难得可以自己开发一个app，那本app自然是界面不能丑了，<del>在保证实用性的基础上我会大力加点花里胡哨的东西</del>。</p>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>既然注册了彩云app的账号，那既然还是用这个api啦，提供的数据也足够用了。还要搜集插图，设计界面。</p>
+<h2 id="TODO（画饼）"><a href="#TODO（画饼）" class="headerlink" title="TODO（画饼）"></a>TODO（画饼）</h2><ul>
+<li><input disabled="" type="checkbox"> 画launcher icon</li>
+<li><input disabled="" type="checkbox"> 搜集插图</li>
+<li><input disabled="" type="checkbox"> 设计界面</li>
+<li><input disabled="" type="checkbox"> 完成基础功能</li>
+<li><input disabled="" type="checkbox"> 优化好暗色模式</li>
+<li><input disabled="" type="checkbox"> 升级动效</li>
+<li><input disabled="" type="checkbox"> 待定</li>
+</ul>
+<h2 id="开坑"><a href="#开坑" class="headerlink" title="开坑"></a>开坑</h2>]]></content>
+      <categories>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+      </tags>
+  </entry>
 </search>
