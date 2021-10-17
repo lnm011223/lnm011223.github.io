@@ -55,6 +55,9 @@
 <p>然后就可以重启系统了</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br><span class="line">uname -r //重启完可以用这个看看当前内核</span><br></pre></td></tr></table></figure>
 
+<blockquote>
+<p>看完本文觉得有帮助的可以去本人的GitHub点个follow哇，说不定还有下一次作业呢</p>
+</blockquote>
 <h1 id="踩坑记录"><a href="#踩坑记录" class="headerlink" title="踩坑记录"></a>踩坑记录</h1><h2 id="make的时候提示debian-canonical-certs-pem"><a href="#make的时候提示debian-canonical-certs-pem" class="headerlink" title="make的时候提示debian/canonical-certs.pem"></a>make的时候提示debian/canonical-certs.pem</h2><blockquote>
 <p>没有规则可制作目标“debian/canonical-certs.pem”，由“certs/x509_certificate_list” 需求。 停止。<br>[Makefile:1858：certs] 错误 2</p>
 </blockquote>
@@ -164,7 +167,10 @@
 <li><input disabled="" type="checkbox"> 升级动效</li>
 <li><input disabled="" type="checkbox"> 待定</li>
 </ul>
-<h2 id="开坑"><a href="#开坑" class="headerlink" title="开坑"></a>开坑</h2>]]></content>
+<h2 id="开坑"><a href="#开坑" class="headerlink" title="开坑"></a>开坑</h2><blockquote>
+<p><a href="https://github.com/lnm011223/FIneWeather/tree/master">GitHub项目地址</a>：可以来提issue哇</p>
+</blockquote>
+]]></content>
       <categories>
         <category>开发</category>
       </categories>
