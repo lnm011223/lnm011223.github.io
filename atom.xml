@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>lnm011223の私密房间</title>
+  <icon>https://lnm011223.xyz/icon.png</icon>
+  
+  <link href="https://lnm011223.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://lnm011223.xyz/"/>
+  <updated>2021-10-25T13:10:05.037Z</updated>
+  <id>https://lnm011223.xyz/</id>
+  
+  <author>
+    <name>lnm011223</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FineWeather开发记录</title>
+    <link href="https://lnm011223.xyz/2021/10/17/weather/"/>
+    <id>https://lnm011223.xyz/2021/10/17/weather/</id>
+    <published>2021-10-17T13:21:07.000Z</published>
+    <updated>2021-10-25T13:10:05.037Z</updated>
+    
+    
+    <summary type="html">上个星期看完了第一行代码，感觉书里的实战有点过于简陋了，于是自己开个坑</summary>
+    
+    
+    
+    <category term="开发" scheme="https://lnm011223.xyz/categories/%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="Android" scheme="https://lnm011223.xyz/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux kernel编译记录</title>
+    <link href="https://lnm011223.xyz/2021/10/10/Linux-kernel/"/>
+    <id>https://lnm011223.xyz/2021/10/10/Linux-kernel/</id>
+    <published>2021-10-10T08:54:22.000Z</published>
+    <updated>2021-10-31T08:14:03.580Z</updated>
+    
+    
+    <summary type="html">记录一下内核编译的过程和踩坑经历</summary>
+    
+    
+    
+    <category term="学习" scheme="https://lnm011223.xyz/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Linux" scheme="https://lnm011223.xyz/tags/Linux/"/>
+    
+    <category term="kernel" scheme="https://lnm011223.xyz/tags/kernel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>花束般的恋爱观后有感</title>
+    <link href="https://lnm011223.xyz/2021/09/16/huashu/"/>
+    <id>https://lnm011223.xyz/2021/09/16/huashu/</id>
+    <published>2021-09-16T02:30:31.000Z</published>
+    <updated>2021-09-20T14:48:57.639Z</updated>
+    
+    
+    <summary type="html">始于同好共鸣的文青恋爱死于柴米油盐。</summary>
+    
+    
+    
+    <category term="生活记录" scheme="https://lnm011223.xyz/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="感想" scheme="https://lnm011223.xyz/tags/%E6%84%9F%E6%83%B3/"/>
+    
+    <category term="电影" scheme="https://lnm011223.xyz/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git使用命令</title>
+    <link href="https://lnm011223.xyz/2021/09/14/git/"/>
+    <id>https://lnm011223.xyz/2021/09/14/git/</id>
+    <published>2021-09-14T14:32:31.000Z</published>
+    <updated>2021-09-19T19:38:16.778Z</updated>
+    
+    
+    <summary type="html">暑假的时候看了廖雪峰写的git使用教程，这学期要频繁使用，所以特地记录下来。基本就是从廖雪峰的网站里摘抄的，供自己翻阅。</summary>
+    
+    
+    
+    <category term="使用技巧" scheme="https://lnm011223.xyz/categories/%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="git" scheme="https://lnm011223.xyz/tags/git/"/>
+    
+  </entry>
+  
+</feed>
