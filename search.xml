@@ -200,7 +200,7 @@
 <p><del>作为一个懒人，那肯定要省时间的方法啊，谁会再去等至少一个小时的内核编译时间啊</del></p>
 <h3 id="1-查询-sys-call-table-的地址"><a href="#1-查询-sys-call-table-的地址" class="headerlink" title="1.查询 sys_call_table 的地址"></a>1.查询 sys_call_table 的地址</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo cat /proc/kallsyms | grep sys_call_table</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211121000419205.png" alt="image-20211121000419205"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211121000419205.png"></p>
 <p>找到sys_call_table 的地址为<strong>0xffffffff91a013a0</strong></p>
 <h3 id="2-查询可用的系统调用号"><a href="#2-查询可用的系统调用号" class="headerlink" title="2.查询可用的系统调用号"></a>2.查询可用的系统调用号</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cat /usr/include/asm-generic/unistd.h</span><br></pre></td></tr></table></figure>
 
@@ -240,7 +240,7 @@
 <p>使用 <code>gcc test.c</code> 和 <code>./a.out</code> 命名查看运行结果：</p>
 <p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211121012942991.png"></p>
 <p>通过 <code>dmesg</code> 命令查看系统调用的结果：</p>
-<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211121013038067.png" alt="image-20211121013038067"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211121013038067.png"></p>
 <p><strong>说明添加系统调用成功</strong></p>
 <h2 id="3-2-IPC"><a href="#3-2-IPC" class="headerlink" title="3.2 IPC"></a>3.2 IPC</h2><h3 id="代码实践-1："><a href="#代码实践-1：" class="headerlink" title="代码实践 1："></a>代码实践 1：</h3><blockquote>
 <p>本人在学者网的课程主页中上传了相关 Slides（教学资源里名 为“Linux-OS.zip“的压缩包），其第 12、13 章对上述四种 IPC 方式的使用过程和 示范代码进行了详细的解释。所以这里就请大家先根据上述压缩包里的教程，把 四种 IPC 方式的代码在自己的虚拟机里正确的运行起来并仔细理解。因为这些隶 属于应用层代码，所以难度较低。</p>
