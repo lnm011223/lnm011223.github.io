@@ -6,7 +6,7 @@
   <link href="https://lnm011223.xyz/atom.xml" rel="self"/>
   
   <link href="https://lnm011223.xyz/"/>
-  <updated>2021-10-25T13:10:05.037Z</updated>
+  <updated>2021-11-20T18:31:29.298Z</updated>
   <id>https://lnm011223.xyz/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>系统调用和进程通信踩坑记录</title>
+    <link href="https://lnm011223.xyz/2021/11/20/Linux-system/"/>
+    <id>https://lnm011223.xyz/2021/11/20/Linux-system/</id>
+    <published>2021-11-20T15:33:18.000Z</published>
+    <updated>2021-11-20T18:31:29.298Z</updated>
+    
+    
+    <summary type="html">又是经典的ldd作业时间啦</summary>
+    
+    
+    
+    <category term="学习" scheme="https://lnm011223.xyz/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Linux" scheme="https://lnm011223.xyz/tags/Linux/"/>
+    
+    <category term="System Call" scheme="https://lnm011223.xyz/tags/System-Call/"/>
+    
+    <category term="IPC" scheme="https://lnm011223.xyz/tags/IPC/"/>
+    
+  </entry>
   
   <entry>
     <title>FineWeather开发记录</title>
