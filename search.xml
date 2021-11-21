@@ -204,7 +204,12 @@
 <p>找到sys_call_table 的地址为<strong>0xffffffff91a013a0</strong></p>
 <h3 id="2-查询可用的系统调用号"><a href="#2-查询可用的系统调用号" class="headerlink" title="2.查询可用的系统调用号"></a>2.查询可用的系统调用号</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cat /usr/include/asm-generic/unistd.h</span><br></pre></td></tr></table></figure>
 
-<p>这里我是这个路径，其他人好像不是，反正找到这个<code>unistd</code>文件就行，然后看一下哪个号没被占用</p>
+<p>这里我是这个路径，其他人好像不是，</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo find / -name unistd*.h</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211121094548170.png"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211121094955823.png"></p>
+<p>反正找到这个<code>unistd</code>文件就行，然后看一下哪个号没被占用</p>
 <p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20211121001129248.png"></p>
 <p>找到<u><strong>415号</strong></u>是可用的系统调用号</p>
 <h3 id="3-创建lnm-c文件"><a href="#3-创建lnm-c文件" class="headerlink" title="3.创建lnm.c文件"></a>3.创建lnm.c文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim lnm.c</span><br></pre></td></tr></table></figure>
