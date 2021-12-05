@@ -433,4 +433,20 @@
         <tag>UI</tag>
       </tags>
   </entry>
+  <entry>
+    <title>日记本的实现</title>
+    <url>/2021/12/05/DiaryApp/</url>
+    <content><![CDATA[<h1 id="日记本的设计与实现说明文档"><a href="#日记本的设计与实现说明文档" class="headerlink" title="日记本的设计与实现说明文档"></a>日记本的设计与实现说明文档</h1><h2 id="一、软件名称"><a href="#一、软件名称" class="headerlink" title="一、软件名称"></a>一、软件名称</h2><p>​    简易日记本</p>
+<blockquote>
+<p>GitHub项目地址：<a href="https://github.com/lnm011223/My_diary/">https://github.com/lnm011223/My_diary/</a></p>
+</blockquote>
+<h2 id="二、软件内容简介"><a href="#二、软件内容简介" class="headerlink" title="二、软件内容简介"></a>二、软件内容简介</h2>]]></content>
+      <categories>
+        <category>作业</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+        <tag>UI</tag>
+      </tags>
+  </entry>
 </search>
