@@ -6,7 +6,7 @@
   <link href="https://lnm011223.xyz/atom.xml" rel="self"/>
   
   <link href="https://lnm011223.xyz/"/>
-  <updated>2021-12-08T02:02:46.046Z</updated>
+  <updated>2021-12-08T16:37:30.036Z</updated>
   <id>https://lnm011223.xyz/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>锁与Reflex空想</title>
+    <link href="https://lnm011223.xyz/2021/12/08/Linux-4th/"/>
+    <id>https://lnm011223.xyz/2021/12/08/Linux-4th/</id>
+    <published>2021-12-08T02:11:22.000Z</published>
+    <updated>2021-12-08T16:37:30.036Z</updated>
+    
+    
+    <summary type="html">ldd第四次作业</summary>
+    
+    
+    
+    <category term="学习" scheme="https://lnm011223.xyz/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Linux" scheme="https://lnm011223.xyz/tags/Linux/"/>
+    
+    <category term="Reflex" scheme="https://lnm011223.xyz/tags/Reflex/"/>
+    
+  </entry>
   
   <entry>
     <title>日记本的实现</title>
