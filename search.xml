@@ -724,4 +724,70 @@
         <tag>UI</tag>
       </tags>
   </entry>
+  <entry>
+    <title>《移动智能应用开发》课程个人实验报告</title>
+    <url>/2022/01/05/Android-report/</url>
+    <content><![CDATA[<h1 id="《移动智能应用开发》课程实验报告"><a href="#《移动智能应用开发》课程实验报告" class="headerlink" title="《移动智能应用开发》课程实验报告"></a>《移动智能应用开发》课程实验报告</h1><h2 id="一、项目名称"><a href="#一、项目名称" class="headerlink" title="一、项目名称"></a>一、项目名称</h2><p><em><strong>Food’ secret</strong></em>（营养咨询app）</p>
+<blockquote>
+<p><strong>项目地址：</strong><a href="https://github.com/android-app-development-course/2021autumn-A15-Nutrition-consultation">2021autumn-A15-Nutrition-consultation</a></p>
+</blockquote>
+<h2 id="二、项目的主题、设计目的"><a href="#二、项目的主题、设计目的" class="headerlink" title="二、项目的主题、设计目的"></a>二、项目的主题、设计目的</h2><p>产品主要供给想要规范化自己日常饮食的人群，如计划在减肥的肥胖人士，需要控制饮食的病人之类的。这类人群需要比较精确的知道食物的营养成分，让自己的饮食可以合理的提供所需的营养。而且这类人群有能力也会接受付费的定制化服务，消费水平可观。</p>
+<ul>
+<li><p><strong>为什么做？—— “我们为什么要开发这个产品？”（战略层）</strong></p>
+<p>解决人们对于快速精准了解食物具体营养成分的需求。</p>
+</li>
+<li><p><strong>做什么？—— “我们要开发的是什么？”（范围层）</strong></p>
+<p>我们的产品主要以功能性为主，向用户精准快速地提供食物营养成分。</p>
+</li>
+<li><p><strong>怎么做？——“我们如何达到上述抽象层面所确定的问题？”（结构层、框架层、表现层）</strong></p>
+<p>我们的产品将首先立足于最基本的需求痛点——通过用户输入食物名称或者相关信息返回相应的营养信息，供用户利用这些信息制定饮食方案。除此之外，我们将追求实现动态记录用户每一天的营养摄入情况，并且通过用户设定的营养目标动态地为用户提供饮食建议。</p>
+</li>
+</ul>
+<h2 id="三、软件简介-包括软件的基本结构、基本内容、运行环境等"><a href="#三、软件简介-包括软件的基本结构、基本内容、运行环境等" class="headerlink" title="三、软件简介:包括软件的基本结构、基本内容、运行环境等"></a>三、软件简介:包括软件的基本结构、基本内容、运行环境等</h2><h3 id="1-基本内容"><a href="#1-基本内容" class="headerlink" title="1.基本内容"></a>1.基本内容</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> 可以直接通过关键字模糊搜索某种食物的营养成分</li>
+<li><input checked="" disabled="" type="checkbox"> 可以在分类页面查看每个分类下每个具体食物的营养成分</li>
+<li><input checked="" disabled="" type="checkbox"> 可以把已查询到的食物添加进分析列表</li>
+<li><input checked="" disabled="" type="checkbox"> 可以对分析列表中的食物进行选择和输入具体食用量</li>
+<li><input checked="" disabled="" type="checkbox"> 可以根据当前时间结合营养需求给出建议</li>
+<li><input checked="" disabled="" type="checkbox"> 每个fragment都有不一样的颜色，会自动改变，侧边栏的部分也会随之改变</li>
+</ul>
+<h3 id="2-基本结构"><a href="#2-基本结构" class="headerlink" title="2.基本结构"></a>2.基本结构</h3><p><strong>单activity多fragment结构</strong></p>
+<blockquote>
+<p><strong>用Navigation组件管理7个fragment：</strong></p>
+<ul>
+<li>home</li>
+<li>search</li>
+<li>tag</li>
+<li>detail</li>
+<li>select</li>
+<li>analyse</li>
+<li>about</li>
+</ul>
+<p><strong>主要有四个recycleview：</strong></p>
+<ul>
+<li>Food</li>
+<li>Result</li>
+<li>Tag</li>
+<li>Foodselect</li>
+</ul>
+</blockquote>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220105101147601.png"></p>
+<h2 id="四、重点介绍整个软件开发过程中个人的主要工作和收获"><a href="#四、重点介绍整个软件开发过程中个人的主要工作和收获" class="headerlink" title="四、重点介绍整个软件开发过程中个人的主要工作和收获"></a>四、重点介绍整个软件开发过程中个人的主要工作和收获</h2><h3 id="主要工作："><a href="#主要工作：" class="headerlink" title="主要工作："></a>主要工作：</h3><p><strong><u>本人负责的是UI设计和实现以及部分操作逻辑的实现</u></strong></p>
+<p>具体包括<strong>7个fragemnt</strong>的实现以及<strong>4个recycleview</strong>的实现，还有<strong>部分数据传递</strong>的工作</p>
+<h3 id="收获："><a href="#收获：" class="headerlink" title="收获："></a>收获：</h3><ol>
+<li>熟悉了navigation组建的基本用法，如何在fragment之间导航，传递整个类的数据之类的</li>
+<li>自己设计了这个app的UI，熟悉了约束布局的使用和sketch的线框图功能</li>
+<li>发现很多UI实现方面的小细节和技巧，对自己还是有很大帮助的，比如获得一些套壳布局的id之类的</li>
+</ol>
+<h2 id="五、设计实践中目前存在的问题"><a href="#五、设计实践中目前存在的问题" class="headerlink" title="五、设计实践中目前存在的问题"></a>五、设计实践中目前存在的问题</h2><ol>
+<li>因为用的是免费的API，所以食物的数据不够全面丰富，并不能很好的提供完整的用户体验</li>
+<li>分析结果部分做得差强人意，不能根据用户的偏好来进行更细化的分析，比如不让用户在相邻的时间内重复提醒吃某种食物</li>
+<li>和用户的个人交互方面有待完善，没有收藏食物，记录用户习惯，记录体重这种让用户更舒心的功能</li>
+<li>动效不足，因为网上的文档和资源较少，而且本项目的所有内容都是自己写的，除了网络部分引用了库，所以一些地方因为技术问题可能会不是很完美</li>
+</ol>
+<h2 id="六、设计实践过程中的自我感想"><a href="#六、设计实践过程中的自我感想" class="headerlink" title="六、设计实践过程中的自我感想"></a>六、设计实践过程中的自我感想</h2><p>因为项目是没用到别人的项目代码的，所以什么都是自己搭起来的，学到了挺多东西的吧。但是也清楚了自己的能力所限，比如一些想要的效果做不出来，现在我也不知道那个motion的具体用法。什么共享元素过度之类的，还有各种material design效果的实现，也没找到官方的资源。</p>
+<p>不仅是代码能力的缺失，对UI设计的能力也不足，比较单调，可以多去dribble学一下，而且目前图标，插图什么的都是用的别人的，自己也不会画。</p>
+<p>总的来说，距离我的梦想（成为一个能做出好看界面的程序员）还有很长的一段路啊，两端都看不到头，安卓代码这边路漫漫其修远兮，什么自定义view，还有好多jetpack的，而且自己也想学学flutter。总之只能努力学了。</p>
+]]></content>
+  </entry>
 </search>
