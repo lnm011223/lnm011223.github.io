@@ -6,7 +6,7 @@
   <link href="https://lnm011223.xyz/atom.xml" rel="self"/>
   
   <link href="https://lnm011223.xyz/"/>
-  <updated>2022-01-05T08:19:56.882Z</updated>
+  <updated>2022-01-11T13:30:35.128Z</updated>
   <id>https://lnm011223.xyz/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图形学期末复习整理</title>
+    <link href="https://lnm011223.xyz/2022/01/11/tuxingxuezhengli/"/>
+    <id>https://lnm011223.xyz/2022/01/11/tuxingxuezhengli/</id>
+    <published>2022-01-11T13:28:19.000Z</published>
+    <updated>2022-01-11T13:30:35.128Z</updated>
+    
+    
+    <summary type="html">根据老师的提纲整理的一些自用复习资料</summary>
+    
+    
+    
+    <category term="学习" scheme="https://lnm011223.xyz/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="图形学" scheme="https://lnm011223.xyz/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/"/>
+    
+    <category term="期末复习" scheme="https://lnm011223.xyz/tags/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>《移动智能应用开发》课程个人实验报告</title>

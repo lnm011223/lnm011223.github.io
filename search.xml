@@ -790,4 +790,57 @@
 <p>总的来说，距离我的梦想（成为一个能做出好看界面的程序员）还有很长的一段路啊，两端都看不到头，安卓代码这边路漫漫其修远兮，什么自定义view，还有好多jetpack的，而且自己也想学学flutter。总之只能努力学了。</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>图形学期末复习整理</title>
+    <url>/2022/01/11/tuxingxuezhengli/</url>
+    <content><![CDATA[<h1 id="图形学复习整理"><a href="#图形学复习整理" class="headerlink" title="图形学复习整理"></a>图形学复习整理</h1><h2 id="名词解释："><a href="#名词解释：" class="headerlink" title="名词解释："></a>名词解释：</h2><ul>
+<li><p><strong>计算机图形学</strong>是研究怎样利用计算机来显示、生成和处理图形的原理、方法和技术的一门学科。</p>
+</li>
+<li><p>在计算机图形学中，将在用户坐标系中需要进行观察和处理的一个坐标区域称为<strong>窗口</strong>（Window）</p>
+</li>
+<li><p>将窗口映射到显示设备上的坐标区域称为<strong>视区</strong>（Viewport）</p>
+</li>
+<li><p>用离散量表示连续量引起的失真，就叫做<strong>走样（</strong>Liasing****）。用于减少或消除这种效果的技术，称为反走样</p>
+</li>
+<li><p><strong>灭点</strong>：</p>
+<p>不平行于投影面的平行线的投影会汇聚到一个点，这个点称为<strong>灭点</strong>(Vanishing Point)。</p>
+<p>坐标轴方向的平行线在投影面上形成的灭点称作<strong>主灭点</strong>。</p>
+<p><strong>一点透视</strong>有一个主灭点，即投影面与一个坐标轴正交，与另外两个坐标轴平行。</p>
+<p><strong>两点透视</strong>有两个主灭点，即投影面与两个坐标轴相交，与另一个坐标轴平行。</p>
+<p><strong>三点透视</strong>有三个主灭点，即投影面与三个坐标轴都相交</p>
+</li>
+</ul>
+<h2 id="计算公式："><a href="#计算公式：" class="headerlink" title="计算公式："></a>计算公式：</h2><p>帧缓存大小的计算：</p>
+<p>  x方向的象素点数 X y方向的象素点数 X log<sub>2</sub>n/8  </p>
+<p> 其中：n为颜色数或灰度等级数</p>
+<p>欧拉公式证明简单多面体的顶点数V、边数E和面数F满足如下关系：V-E+F=2</p>
+<p>令H表示多面体表面上孔的个数，G表示贯穿多面体的孔的个数，C表示独立的、不相连接的多面体数，则<strong>扩展后的欧拉公式</strong>为：V-E+F-H=2（C-G）</p>
+<p>二维几何变换：</p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111155707809.png" alt="image-20220111155707809"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111155739740.png" alt="image-20220111155739740"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111155936643.png" alt="image-20220111155936643"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111160400711.png" alt="image-20220111160400711"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111160320001.png" alt="image-20220111160320001"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111160333973.png" alt="image-20220111160333973"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111161104529.png" alt="image-20220111161104529"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111161116470.png" alt="image-20220111161116470"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111161048507.png" alt="image-20220111161048507"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111161024555.png" alt="image-20220111161024555"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111161334976.png" alt="image-20220111161334976"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111161651479.png" alt="image-20220111161651479"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111161706608.png" alt="image-20220111161706608"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111161719309.png" alt="image-20220111161719309"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111161729687.png" alt="image-20220111161729687"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111161858850.png" alt="image-20220111161858850"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111161907345.png" alt="image-20220111161907345"></p>
+<p><img src="https://gitee.com/lnm011223/lnm011223-picture/raw/master/uPic/image-20220111211951661.png" alt="image-20220111211951661"></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>图形学</tag>
+        <tag>期末复习</tag>
+      </tags>
+  </entry>
 </search>
