@@ -6,7 +6,7 @@
   <link href="https://lnm011223.xyz/atom.xml" rel="self"/>
   
   <link href="https://lnm011223.xyz/"/>
-  <updated>2022-01-11T14:05:31.532Z</updated>
+  <updated>2022-03-22T15:56:15.333Z</updated>
   <id>https://lnm011223.xyz/</id>
   
   <author>
@@ -17,11 +17,24 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>kotlin-review</title>
+    <link href="https://lnm011223.xyz/2022/03/22/kotlin-review/"/>
+    <id>https://lnm011223.xyz/2022/03/22/kotlin-review/</id>
+    <published>2022-03-22T15:56:15.000Z</published>
+    <updated>2022-03-22T15:56:15.333Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>图形学期末复习整理</title>
     <link href="https://lnm011223.xyz/2022/01/11/tuxingxuezhengli/"/>
     <id>https://lnm011223.xyz/2022/01/11/tuxingxuezhengli/</id>
     <published>2022-01-11T13:28:19.000Z</published>
-    <updated>2022-01-11T14:05:31.532Z</updated>
+    <updated>2022-04-04T10:35:59.621Z</updated>
     
     
     <summary type="html">根据老师的提纲整理的一些自用复习资料</summary>
@@ -42,7 +55,7 @@
     <link href="https://lnm011223.xyz/2022/01/05/Android-report/"/>
     <id>https://lnm011223.xyz/2022/01/05/Android-report/</id>
     <published>2022-01-05T08:17:14.000Z</published>
-    <updated>2022-01-05T08:19:56.882Z</updated>
+    <updated>2022-04-04T10:33:40.638Z</updated>
     
     
     <summary type="html">安卓归档</summary>
@@ -57,7 +70,7 @@
     <link href="https://lnm011223.xyz/2021/12/23/My-contacts/"/>
     <id>https://lnm011223.xyz/2021/12/23/My-contacts/</id>
     <published>2021-12-23T00:59:39.000Z</published>
-    <updated>2021-12-23T05:23:00.127Z</updated>
+    <updated>2022-04-04T10:35:47.580Z</updated>
     
     
     <summary type="html">安卓作业归档</summary>
@@ -78,7 +91,7 @@
     <link href="https://lnm011223.xyz/2021/12/08/Linux-4th/"/>
     <id>https://lnm011223.xyz/2021/12/08/Linux-4th/</id>
     <published>2021-12-08T02:11:22.000Z</published>
-    <updated>2021-12-30T14:36:06.676Z</updated>
+    <updated>2022-04-04T10:35:29.008Z</updated>
     
     
     <summary type="html">ldd第四次作业</summary>
@@ -99,7 +112,7 @@
     <link href="https://lnm011223.xyz/2021/12/05/DiaryApp/"/>
     <id>https://lnm011223.xyz/2021/12/05/DiaryApp/</id>
     <published>2021-12-05T13:05:04.000Z</published>
-    <updated>2021-12-22T08:42:14.499Z</updated>
+    <updated>2022-04-04T10:34:41.237Z</updated>
     
     
     <summary type="html">安卓作业归档</summary>
@@ -120,7 +133,7 @@
     <link href="https://lnm011223.xyz/2021/11/22/Login-sample/"/>
     <id>https://lnm011223.xyz/2021/11/22/Login-sample/</id>
     <published>2021-11-21T17:20:00.000Z</published>
-    <updated>2021-11-21T17:52:03.231Z</updated>
+    <updated>2022-04-04T10:35:38.535Z</updated>
     
     
     <summary type="html">安卓课作业归档</summary>
@@ -141,7 +154,7 @@
     <link href="https://lnm011223.xyz/2021/11/20/Linux-system/"/>
     <id>https://lnm011223.xyz/2021/11/20/Linux-system/</id>
     <published>2021-11-20T15:33:18.000Z</published>
-    <updated>2021-11-21T17:17:22.299Z</updated>
+    <updated>2022-04-04T10:35:20.004Z</updated>
     
     
     <summary type="html">又是经典的ldd作业时间啦</summary>
@@ -164,7 +177,7 @@
     <link href="https://lnm011223.xyz/2021/10/17/weather/"/>
     <id>https://lnm011223.xyz/2021/10/17/weather/</id>
     <published>2021-10-17T13:21:07.000Z</published>
-    <updated>2021-10-25T13:10:05.037Z</updated>
+    <updated>2022-04-04T10:36:09.717Z</updated>
     
     
     <summary type="html">上个星期看完了第一行代码，感觉书里的实战有点过于简陋了，于是自己开个坑</summary>
@@ -183,7 +196,7 @@
     <link href="https://lnm011223.xyz/2021/10/10/Linux-kernel/"/>
     <id>https://lnm011223.xyz/2021/10/10/Linux-kernel/</id>
     <published>2021-10-10T08:54:22.000Z</published>
-    <updated>2021-11-20T15:37:28.266Z</updated>
+    <updated>2022-04-04T10:35:09.339Z</updated>
     
     
     <summary type="html">记录一下内核编译的过程和踩坑经历</summary>
@@ -204,7 +217,7 @@
     <link href="https://lnm011223.xyz/2021/09/16/huashu/"/>
     <id>https://lnm011223.xyz/2021/09/16/huashu/</id>
     <published>2021-09-16T02:30:31.000Z</published>
-    <updated>2021-09-20T14:48:57.639Z</updated>
+    <updated>2022-04-04T10:34:50.992Z</updated>
     
     
     <summary type="html">始于同好共鸣的文青恋爱死于柴米油盐。</summary>
@@ -225,7 +238,7 @@
     <link href="https://lnm011223.xyz/2021/09/14/git/"/>
     <id>https://lnm011223.xyz/2021/09/14/git/</id>
     <published>2021-09-14T14:32:31.000Z</published>
-    <updated>2021-09-19T19:38:16.778Z</updated>
+    <updated>2022-04-04T10:34:39.209Z</updated>
     
     
     <summary type="html">暑假的时候看了廖雪峰写的git使用教程，这学期要频繁使用，所以特地记录下来。基本就是从廖雪峰的网站里摘抄的，供自己翻阅。</summary>
