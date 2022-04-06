@@ -196,6 +196,14 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
     padding: 0px;
 }
 
+
+#pagination .page-number.current {
+    background: #2196F3;
+    color: var(--white);
+    cursor: default;
+    border-radius: 8px;
+}
+
 /* 自定义字体 */
 @font-face {
     font-family: 'sleek';
