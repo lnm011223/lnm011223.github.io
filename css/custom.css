@@ -197,18 +197,6 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
 }
 
 
-#pagination .page-number.current {
-    background: #2196F3;
-    color: var(--white);
-    cursor: default;
-    border-radius: 8px;
-}
-.cardHover, .error404 #error-wrap .error-content, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > :not(.space) {
-    box-shadow: var(--card-box-shadow);
-    border-radius: 8px;
-    background: var(--card-bg);
-    transition: all 0.3s ease 0s;
-}
 
 /* 自定义字体 */
 @font-face {
