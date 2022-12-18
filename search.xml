@@ -97,105 +97,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux kernel编译记录</title>
-    <url>/2021/10/10/Linux-kernel/</url>
-    <content><![CDATA[<blockquote>
-<p>本文参考了<a href="https://linux.cn/article-9665-1.html">如何编译 Linux 内核</a></p>
-</blockquote>
-<h1 id="开始踩坑"><a href="#开始踩坑" class="headerlink" title="开始踩坑"></a>开始踩坑</h1><blockquote>
-<p>编译的内核版本为5.14.9，且Linux发行版为Ubuntu 20.04.3 LTS</p>
-</blockquote>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="安装ssh服务"><a href="#安装ssh服务" class="headerlink" title="安装ssh服务"></a>安装ssh服务</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo ps -e |grep ssh //查看是否有安装ssh服务</span><br><span class="line">sudo apt-get update //更新资源列表</span><br><span class="line">sudo apt-get install openssh-server //安装</span><br><span class="line">udo ps -e |grep ssh //再次查看是否安装成功</span><br><span class="line">ifconfig //查ip</span><br></pre></td></tr></table></figure>
-
-<h3 id="下载内核源码"><a href="#下载内核源码" class="headerlink" title="下载内核源码"></a>下载内核源码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.14.9.tar.xz</span><br></pre></td></tr></table></figure>
-
-<h3 id="安装编译环境"><a href="#安装编译环境" class="headerlink" title="安装编译环境"></a>安装编译环境</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison</span><br></pre></td></tr></table></figure>
-
-<h3 id="解压源码"><a href="#解压源码" class="headerlink" title="解压源码"></a>解压源码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo tar xvJf linux-5.14.9.tar.xz //先用cp命令拷贝到usr/src/再解压</span><br></pre></td></tr></table></figure>
-
-<h2 id="配置内核"><a href="#配置内核" class="headerlink" title="配置内核"></a>配置内核</h2><blockquote>
-<p>以下的命令不出意外都需要在前面加<code>sudo</code></p>
-</blockquote>
-<p>首先必须配置需要包含哪些模块。实际上，有一些非常简单的方式来配置。使用一个命令，你能拷贝当前内核的配置文件，然后使用可靠的 <code>menuconfig</code> 命令来做任何必要的更改。使用如下命令来完成：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo cp /boot/config-$(uname -r) .config</span><br></pre></td></tr></table></figure>
-
-<p>有一个配置文件了，输入命令 <code>make menuconfig</code>。该命令将打开一个配置工具（图 1），它可以让你遍历每个可用模块，然后启用或者禁用你需要或者不需要的模块。</p>
-<blockquote>
-<p>我个人是直接进去配置界面然后exit的，估计这样就直接采用拷贝过来的配置文件了，下面的<code>make</code>命令就不需要选择一堆问题了</p>
-</blockquote>
-<blockquote>
-<p><em><strong><u><a href="#%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95">建议先看看下面的坑</a>,看完可以省事！</u></strong></em></p>
-</blockquote>
-<h3 id="编译和安装"><a href="#编译和安装" class="headerlink" title="编译和安装"></a>编译和安装</h3><p>这里需要的时间是最多的，我给了8g内存给虚拟机，cpu占用59%，最后跑了55分钟</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo time make -jn //最好在前面加time,统计一下时间</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><a href="https://blog.csdn.net/zl3090/article/details/89303583?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-0.no_search_link&spm=1001.2101.3001.4242">这里贴一下网上搜到的对-jn的理解</a>，总结来说就是n一般是cpu核心数量的两倍</p>
-</blockquote>
-<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%8812.20.03.png"></p>
-<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%882.03.48.png"></p>
-<blockquote>
-<p>最好在这里弄个快照，这样安装完内核重启之后出问题了还能退回这一步</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo make modules_install // 安装那些之前启用的模块</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%882.09.09.png"></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo make install //安装内核</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%882.10.31.png"></p>
-<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%882.12.30.png"></p>
-<h2 id="启动内核作为引导"><a href="#启动内核作为引导" class="headerlink" title="启动内核作为引导"></a>启动内核作为引导</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo update-initramfs -c -k 5.14.9</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo update-grub</span><br></pre></td></tr></table></figure>
-
-<p>然后就可以重启系统了</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br><span class="line">uname -r //重启完可以用这个看看当前内核</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>看完本文觉得有帮助的可以去本人的GitHub点个follow哇，说不定还有下一次作业呢</p>
-</blockquote>
-<h1 id="踩坑记录"><a href="#踩坑记录" class="headerlink" title="踩坑记录"></a>踩坑记录</h1><h2 id="make的时候提示debian-canonical-certs-pem"><a href="#make的时候提示debian-canonical-certs-pem" class="headerlink" title="make的时候提示debian/canonical-certs.pem"></a>make的时候提示debian/canonical-certs.pem</h2><blockquote>
-<p>没有规则可制作目标“debian/canonical-certs.pem”，由“certs/x509_certificate_list” 需求。 停止。<br>[Makefile:1858：certs] 错误 2</p>
-</blockquote>
-<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/image-20211010225345232.png"></p>
-<p>这个坑可以用下面这个方法解决：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim .config</span><br></pre></td></tr></table></figure>
-
-<p>然后在vim的正常模式下直接输入<code>/debian</code>然后回车就能定位到这个字符串上，把该字符串的值改为空</p>
-<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/image-20211010225809246.png"></p>
-<p>然后用<code>:w !sudo tee %</code>强行保存修改，最后<code>:q!</code>就好了</p>
-<h2 id="make次数过多导致No-space-left-on-device"><a href="#make次数过多导致No-space-left-on-device" class="headerlink" title="make次数过多导致No space left on device"></a>make次数过多导致No space left on device</h2><blockquote>
-<p>嗨呀，这个问题的根本原因就是虚拟机空间给少了，下面的方法只能缓解一下，建议扩容</p>
-<p><a href="https://blog.csdn.net/orange_612/article/details/79597905">这里是网上搜的扩容教程</a>，没实践过，请自行操作</p>
-</blockquote>
-<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/image-20211010230837626.png"></p>
-<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/image-20211010230904891.png"></p>
-<blockquote>
-<p>通过这个文章解决的<a href="https://www.cnblogs.com/kaishirenshi/p/11343983.html">https://www.cnblogs.com/kaishirenshi/p/11343983.html</a></p>
-<p>**<u>/dev/mapper/是挂载在Linux的根目录的（Mounted on /）</u>**，所以不是Ubuntu的如果是这个路径出问题的，<del>应该也是这样解决吧</del></p>
-</blockquote>
-<h3 id="可以清理一下-dev-loop"><a href="#可以清理一下-dev-loop" class="headerlink" title="可以清理一下/dev/loop*"></a>可以清理一下/dev/loop*</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt autoremove --purge snapd</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="可以直接扩容"><a href="#可以直接扩容" class="headerlink" title="可以直接扩容"></a>可以直接扩容</h3><p>给ubuntu–vg-ubuntu–lv扩容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lvresize -A n -L +20G /dev/mapper/ubuntu--vg-ubuntu--lv</span><br><span class="line">resize2fs -p /dev/mapper/ubuntu--vg-ubuntu--lv</span><br></pre></td></tr></table></figure>
-
-<h3 id="也可以删文件解决"><a href="#也可以删文件解决" class="headerlink" title="也可以删文件解决"></a>也可以删文件解决</h3><p>首先<code>cd /</code>到根目录，然后<code>sudo  du -h -x --max-depth=1</code>就能找到下一级目录哪个文件夹，这样一级级找下去，在本文的范围内，不出意外应该是<code>/usr/src/</code>里的那个源码文件夹最大了，所以要不就给虚拟机更多空间，要不就从头开始，直接一开始就把<code>debian/canonical-certs.pem</code>删掉，这样就能一次通过<code>make</code>了，<del>大概</del></p>
-<p>先<code>cd /usr/src/</code>，再rm掉源码文件夹</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo rm -rf linux-5.14.9//换成自己的文件夹名字</span><br></pre></td></tr></table></figure>
-
-<p>然后再<code>cd /</code>，执行<code>df -h</code>，这时候占用应该就正常了</p>
-<h2 id="完结撒花🎉"><a href="#完结撒花🎉" class="headerlink" title="完结撒花🎉"></a>完结撒花🎉</h2>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>kernel</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>锁与Reflex空想</title>
     <url>/2021/12/08/Linux-4th/</url>
     <content><![CDATA[<h2 id="4-1-程序分析题：锁"><a href="#4-1-程序分析题：锁" class="headerlink" title="4.1 程序分析题：锁"></a>4.1 程序分析题：锁</h2><blockquote>
@@ -304,6 +205,105 @@
       <tags>
         <tag>Linux</tag>
         <tag>Reflex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux kernel编译记录</title>
+    <url>/2021/10/10/Linux-kernel/</url>
+    <content><![CDATA[<blockquote>
+<p>本文参考了<a href="https://linux.cn/article-9665-1.html">如何编译 Linux 内核</a></p>
+</blockquote>
+<h1 id="开始踩坑"><a href="#开始踩坑" class="headerlink" title="开始踩坑"></a>开始踩坑</h1><blockquote>
+<p>编译的内核版本为5.14.9，且Linux发行版为Ubuntu 20.04.3 LTS</p>
+</blockquote>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="安装ssh服务"><a href="#安装ssh服务" class="headerlink" title="安装ssh服务"></a>安装ssh服务</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo ps -e |grep ssh //查看是否有安装ssh服务</span><br><span class="line">sudo apt-get update //更新资源列表</span><br><span class="line">sudo apt-get install openssh-server //安装</span><br><span class="line">udo ps -e |grep ssh //再次查看是否安装成功</span><br><span class="line">ifconfig //查ip</span><br></pre></td></tr></table></figure>
+
+<h3 id="下载内核源码"><a href="#下载内核源码" class="headerlink" title="下载内核源码"></a>下载内核源码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.14.9.tar.xz</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装编译环境"><a href="#安装编译环境" class="headerlink" title="安装编译环境"></a>安装编译环境</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison</span><br></pre></td></tr></table></figure>
+
+<h3 id="解压源码"><a href="#解压源码" class="headerlink" title="解压源码"></a>解压源码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo tar xvJf linux-5.14.9.tar.xz //先用cp命令拷贝到usr/src/再解压</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置内核"><a href="#配置内核" class="headerlink" title="配置内核"></a>配置内核</h2><blockquote>
+<p>以下的命令不出意外都需要在前面加<code>sudo</code></p>
+</blockquote>
+<p>首先必须配置需要包含哪些模块。实际上，有一些非常简单的方式来配置。使用一个命令，你能拷贝当前内核的配置文件，然后使用可靠的 <code>menuconfig</code> 命令来做任何必要的更改。使用如下命令来完成：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo cp /boot/config-$(uname -r) .config</span><br></pre></td></tr></table></figure>
+
+<p>有一个配置文件了，输入命令 <code>make menuconfig</code>。该命令将打开一个配置工具（图 1），它可以让你遍历每个可用模块，然后启用或者禁用你需要或者不需要的模块。</p>
+<blockquote>
+<p>我个人是直接进去配置界面然后exit的，估计这样就直接采用拷贝过来的配置文件了，下面的<code>make</code>命令就不需要选择一堆问题了</p>
+</blockquote>
+<blockquote>
+<p><em><strong><u><a href="#%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95">建议先看看下面的坑</a>,看完可以省事！</u></strong></em></p>
+</blockquote>
+<h3 id="编译和安装"><a href="#编译和安装" class="headerlink" title="编译和安装"></a>编译和安装</h3><p>这里需要的时间是最多的，我给了8g内存给虚拟机，cpu占用59%，最后跑了55分钟</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo time make -jn //最好在前面加time,统计一下时间</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><a href="https://blog.csdn.net/zl3090/article/details/89303583?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-0.no_search_link&spm=1001.2101.3001.4242">这里贴一下网上搜到的对-jn的理解</a>，总结来说就是n一般是cpu核心数量的两倍</p>
+</blockquote>
+<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%8812.20.03.png"></p>
+<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%882.03.48.png"></p>
+<blockquote>
+<p>最好在这里弄个快照，这样安装完内核重启之后出问题了还能退回这一步</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo make modules_install // 安装那些之前启用的模块</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%882.09.09.png"></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo make install //安装内核</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%882.10.31.png"></p>
+<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/%E6%88%AA%E5%B1%8F2021-10-07%20%E4%B8%8A%E5%8D%882.12.30.png"></p>
+<h2 id="启动内核作为引导"><a href="#启动内核作为引导" class="headerlink" title="启动内核作为引导"></a>启动内核作为引导</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo update-initramfs -c -k 5.14.9</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo update-grub</span><br></pre></td></tr></table></figure>
+
+<p>然后就可以重启系统了</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br><span class="line">uname -r //重启完可以用这个看看当前内核</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>看完本文觉得有帮助的可以去本人的GitHub点个follow哇，说不定还有下一次作业呢</p>
+</blockquote>
+<h1 id="踩坑记录"><a href="#踩坑记录" class="headerlink" title="踩坑记录"></a>踩坑记录</h1><h2 id="make的时候提示debian-canonical-certs-pem"><a href="#make的时候提示debian-canonical-certs-pem" class="headerlink" title="make的时候提示debian/canonical-certs.pem"></a>make的时候提示debian/canonical-certs.pem</h2><blockquote>
+<p>没有规则可制作目标“debian/canonical-certs.pem”，由“certs/x509_certificate_list” 需求。 停止。<br>[Makefile:1858：certs] 错误 2</p>
+</blockquote>
+<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/image-20211010225345232.png"></p>
+<p>这个坑可以用下面这个方法解决：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim .config</span><br></pre></td></tr></table></figure>
+
+<p>然后在vim的正常模式下直接输入<code>/debian</code>然后回车就能定位到这个字符串上，把该字符串的值改为空</p>
+<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/image-20211010225809246.png"></p>
+<p>然后用<code>:w !sudo tee %</code>强行保存修改，最后<code>:q!</code>就好了</p>
+<h2 id="make次数过多导致No-space-left-on-device"><a href="#make次数过多导致No-space-left-on-device" class="headerlink" title="make次数过多导致No space left on device"></a>make次数过多导致No space left on device</h2><blockquote>
+<p>嗨呀，这个问题的根本原因就是虚拟机空间给少了，下面的方法只能缓解一下，建议扩容</p>
+<p><a href="https://blog.csdn.net/orange_612/article/details/79597905">这里是网上搜的扩容教程</a>，没实践过，请自行操作</p>
+</blockquote>
+<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/image-20211010230837626.png"></p>
+<p><img src="https://blog-1307458383.cos.ap-guangzhou.myqcloud.com/lnm011223-picture-master/uPic/image-20211010230904891.png"></p>
+<blockquote>
+<p>通过这个文章解决的<a href="https://www.cnblogs.com/kaishirenshi/p/11343983.html">https://www.cnblogs.com/kaishirenshi/p/11343983.html</a></p>
+<p>**<u>/dev/mapper/是挂载在Linux的根目录的（Mounted on /）</u>**，所以不是Ubuntu的如果是这个路径出问题的，<del>应该也是这样解决吧</del></p>
+</blockquote>
+<h3 id="可以清理一下-dev-loop"><a href="#可以清理一下-dev-loop" class="headerlink" title="可以清理一下/dev/loop*"></a>可以清理一下/dev/loop*</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt autoremove --purge snapd</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="可以直接扩容"><a href="#可以直接扩容" class="headerlink" title="可以直接扩容"></a>可以直接扩容</h3><p>给ubuntu–vg-ubuntu–lv扩容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lvresize -A n -L +20G /dev/mapper/ubuntu--vg-ubuntu--lv</span><br><span class="line">resize2fs -p /dev/mapper/ubuntu--vg-ubuntu--lv</span><br></pre></td></tr></table></figure>
+
+<h3 id="也可以删文件解决"><a href="#也可以删文件解决" class="headerlink" title="也可以删文件解决"></a>也可以删文件解决</h3><p>首先<code>cd /</code>到根目录，然后<code>sudo  du -h -x --max-depth=1</code>就能找到下一级目录哪个文件夹，这样一级级找下去，在本文的范围内，不出意外应该是<code>/usr/src/</code>里的那个源码文件夹最大了，所以要不就给虚拟机更多空间，要不就从头开始，直接一开始就把<code>debian/canonical-certs.pem</code>删掉，这样就能一次通过<code>make</code>了，<del>大概</del></p>
+<p>先<code>cd /usr/src/</code>，再rm掉源码文件夹</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo rm -rf linux-5.14.9//换成自己的文件夹名字</span><br></pre></td></tr></table></figure>
+
+<p>然后再<code>cd /</code>，执行<code>df -h</code>，这时候占用应该就正常了</p>
+<h2 id="完结撒花🎉"><a href="#完结撒花🎉" class="headerlink" title="完结撒花🎉"></a>完结撒花🎉</h2>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>kernel</tag>
       </tags>
   </entry>
   <entry>
