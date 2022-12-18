@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>lnm011223の私密房间</title>
-  <icon>https://lnm011223.xyz/icon.png</icon>
+  <icon>https://lnm011223.github.io/icon.png</icon>
   
-  <link href="https://lnm011223.xyz/atom.xml" rel="self"/>
+  <link href="https://lnm011223.github.io/atom.xml" rel="self"/>
   
-  <link href="https://lnm011223.xyz/"/>
-  <updated>2022-06-22T16:59:30.168Z</updated>
-  <id>https://lnm011223.xyz/</id>
+  <link href="https://lnm011223.github.io/"/>
+  <updated>2022-06-22T17:00:47.196Z</updated>
+  <id>https://lnm011223.github.io/</id>
   
   <author>
     <name>lnm011223</name>
@@ -18,29 +18,29 @@
   
   <entry>
     <title>第一款为自己打造的app初步感想</title>
-    <link href="https://lnm011223.xyz/2022/06/21/ThinkToMyFirstApp/"/>
-    <id>https://lnm011223.xyz/2022/06/21/ThinkToMyFirstApp/</id>
+    <link href="https://lnm011223.github.io/2022/06/21/ThinkToMyFirstApp/"/>
+    <id>https://lnm011223.github.io/2022/06/21/ThinkToMyFirstApp/</id>
     <published>2022-06-21T13:09:35.000Z</published>
-    <updated>2022-06-22T16:59:30.168Z</updated>
+    <updated>2022-06-22T17:00:47.196Z</updated>
     
     
     <summary type="html">第一款完全按自己想法来的app，记录一下初步的思路</summary>
     
     
     
-    <category term="项目" scheme="https://lnm011223.xyz/categories/%E9%A1%B9%E7%9B%AE/"/>
+    <category term="项目" scheme="https://lnm011223.github.io/categories/%E9%A1%B9%E7%9B%AE/"/>
     
     
-    <category term="Android" scheme="https://lnm011223.xyz/tags/Android/"/>
+    <category term="Android" scheme="https://lnm011223.github.io/tags/Android/"/>
     
-    <category term="UI" scheme="https://lnm011223.xyz/tags/UI/"/>
+    <category term="UI" scheme="https://lnm011223.github.io/tags/UI/"/>
     
   </entry>
   
   <entry>
     <title>第一个完整项目有感</title>
-    <link href="https://lnm011223.xyz/2022/05/17/Learning-Companion/"/>
-    <id>https://lnm011223.xyz/2022/05/17/Learning-Companion/</id>
+    <link href="https://lnm011223.github.io/2022/05/17/Learning-Companion/"/>
+    <id>https://lnm011223.github.io/2022/05/17/Learning-Companion/</id>
     <published>2022-05-17T13:58:41.000Z</published>
     <updated>2022-05-17T16:45:22.523Z</updated>
     
@@ -49,19 +49,19 @@
     
     
     
-    <category term="项目" scheme="https://lnm011223.xyz/categories/%E9%A1%B9%E7%9B%AE/"/>
+    <category term="项目" scheme="https://lnm011223.github.io/categories/%E9%A1%B9%E7%9B%AE/"/>
     
     
-    <category term="Android" scheme="https://lnm011223.xyz/tags/Android/"/>
+    <category term="Android" scheme="https://lnm011223.github.io/tags/Android/"/>
     
-    <category term="UI" scheme="https://lnm011223.xyz/tags/UI/"/>
+    <category term="UI" scheme="https://lnm011223.github.io/tags/UI/"/>
     
   </entry>
   
   <entry>
     <title>kotlin-review</title>
-    <link href="https://lnm011223.xyz/2022/04/04/kotlin-review/"/>
-    <id>https://lnm011223.xyz/2022/04/04/kotlin-review/</id>
+    <link href="https://lnm011223.github.io/2022/04/04/kotlin-review/"/>
+    <id>https://lnm011223.github.io/2022/04/04/kotlin-review/</id>
     <published>2022-04-04T10:52:44.000Z</published>
     <updated>2022-05-17T16:48:12.492Z</updated>
     
@@ -70,17 +70,17 @@
     
     
     
-    <category term="学习" scheme="https://lnm011223.xyz/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://lnm011223.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="Kotlin" scheme="https://lnm011223.xyz/tags/Kotlin/"/>
+    <category term="Kotlin" scheme="https://lnm011223.github.io/tags/Kotlin/"/>
     
   </entry>
   
   <entry>
     <title>图形学期末复习整理</title>
-    <link href="https://lnm011223.xyz/2022/01/11/tuxingxuezhengli/"/>
-    <id>https://lnm011223.xyz/2022/01/11/tuxingxuezhengli/</id>
+    <link href="https://lnm011223.github.io/2022/01/11/tuxingxuezhengli/"/>
+    <id>https://lnm011223.github.io/2022/01/11/tuxingxuezhengli/</id>
     <published>2022-01-11T13:28:19.000Z</published>
     <updated>2022-04-04T10:35:59.621Z</updated>
     
@@ -89,19 +89,19 @@
     
     
     
-    <category term="学习" scheme="https://lnm011223.xyz/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://lnm011223.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="图形学" scheme="https://lnm011223.xyz/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/"/>
+    <category term="图形学" scheme="https://lnm011223.github.io/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/"/>
     
-    <category term="期末复习" scheme="https://lnm011223.xyz/tags/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"/>
+    <category term="期末复习" scheme="https://lnm011223.github.io/tags/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>《移动智能应用开发》课程个人实验报告</title>
-    <link href="https://lnm011223.xyz/2022/01/05/Android-report/"/>
-    <id>https://lnm011223.xyz/2022/01/05/Android-report/</id>
+    <link href="https://lnm011223.github.io/2022/01/05/Android-report/"/>
+    <id>https://lnm011223.github.io/2022/01/05/Android-report/</id>
     <published>2022-01-05T08:17:14.000Z</published>
     <updated>2022-04-04T10:33:40.638Z</updated>
     
@@ -115,8 +115,8 @@
   
   <entry>
     <title>通讯录的实现</title>
-    <link href="https://lnm011223.xyz/2021/12/23/My-contacts/"/>
-    <id>https://lnm011223.xyz/2021/12/23/My-contacts/</id>
+    <link href="https://lnm011223.github.io/2021/12/23/My-contacts/"/>
+    <id>https://lnm011223.github.io/2021/12/23/My-contacts/</id>
     <published>2021-12-23T00:59:39.000Z</published>
     <updated>2022-04-04T10:35:47.580Z</updated>
     
@@ -125,19 +125,19 @@
     
     
     
-    <category term="作业" scheme="https://lnm011223.xyz/categories/%E4%BD%9C%E4%B8%9A/"/>
+    <category term="作业" scheme="https://lnm011223.github.io/categories/%E4%BD%9C%E4%B8%9A/"/>
     
     
-    <category term="Android" scheme="https://lnm011223.xyz/tags/Android/"/>
+    <category term="Android" scheme="https://lnm011223.github.io/tags/Android/"/>
     
-    <category term="UI" scheme="https://lnm011223.xyz/tags/UI/"/>
+    <category term="UI" scheme="https://lnm011223.github.io/tags/UI/"/>
     
   </entry>
   
   <entry>
     <title>锁与Reflex空想</title>
-    <link href="https://lnm011223.xyz/2021/12/08/Linux-4th/"/>
-    <id>https://lnm011223.xyz/2021/12/08/Linux-4th/</id>
+    <link href="https://lnm011223.github.io/2021/12/08/Linux-4th/"/>
+    <id>https://lnm011223.github.io/2021/12/08/Linux-4th/</id>
     <published>2021-12-08T02:11:22.000Z</published>
     <updated>2022-04-04T10:35:29.008Z</updated>
     
@@ -146,19 +146,19 @@
     
     
     
-    <category term="学习" scheme="https://lnm011223.xyz/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://lnm011223.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="Linux" scheme="https://lnm011223.xyz/tags/Linux/"/>
+    <category term="Linux" scheme="https://lnm011223.github.io/tags/Linux/"/>
     
-    <category term="Reflex" scheme="https://lnm011223.xyz/tags/Reflex/"/>
+    <category term="Reflex" scheme="https://lnm011223.github.io/tags/Reflex/"/>
     
   </entry>
   
   <entry>
     <title>日记本的实现</title>
-    <link href="https://lnm011223.xyz/2021/12/05/DiaryApp/"/>
-    <id>https://lnm011223.xyz/2021/12/05/DiaryApp/</id>
+    <link href="https://lnm011223.github.io/2021/12/05/DiaryApp/"/>
+    <id>https://lnm011223.github.io/2021/12/05/DiaryApp/</id>
     <published>2021-12-05T13:05:04.000Z</published>
     <updated>2022-04-04T10:34:41.237Z</updated>
     
@@ -167,19 +167,19 @@
     
     
     
-    <category term="作业" scheme="https://lnm011223.xyz/categories/%E4%BD%9C%E4%B8%9A/"/>
+    <category term="作业" scheme="https://lnm011223.github.io/categories/%E4%BD%9C%E4%B8%9A/"/>
     
     
-    <category term="Android" scheme="https://lnm011223.xyz/tags/Android/"/>
+    <category term="Android" scheme="https://lnm011223.github.io/tags/Android/"/>
     
-    <category term="UI" scheme="https://lnm011223.xyz/tags/UI/"/>
+    <category term="UI" scheme="https://lnm011223.github.io/tags/UI/"/>
     
   </entry>
   
   <entry>
     <title>登录注册界面的设计与实现</title>
-    <link href="https://lnm011223.xyz/2021/11/22/Login-sample/"/>
-    <id>https://lnm011223.xyz/2021/11/22/Login-sample/</id>
+    <link href="https://lnm011223.github.io/2021/11/22/Login-sample/"/>
+    <id>https://lnm011223.github.io/2021/11/22/Login-sample/</id>
     <published>2021-11-21T17:20:00.000Z</published>
     <updated>2022-04-04T10:35:38.535Z</updated>
     
@@ -188,19 +188,19 @@
     
     
     
-    <category term="作业" scheme="https://lnm011223.xyz/categories/%E4%BD%9C%E4%B8%9A/"/>
+    <category term="作业" scheme="https://lnm011223.github.io/categories/%E4%BD%9C%E4%B8%9A/"/>
     
     
-    <category term="Android" scheme="https://lnm011223.xyz/tags/Android/"/>
+    <category term="Android" scheme="https://lnm011223.github.io/tags/Android/"/>
     
-    <category term="UI" scheme="https://lnm011223.xyz/tags/UI/"/>
+    <category term="UI" scheme="https://lnm011223.github.io/tags/UI/"/>
     
   </entry>
   
   <entry>
     <title>系统调用和进程通信踩坑记录</title>
-    <link href="https://lnm011223.xyz/2021/11/20/Linux-system/"/>
-    <id>https://lnm011223.xyz/2021/11/20/Linux-system/</id>
+    <link href="https://lnm011223.github.io/2021/11/20/Linux-system/"/>
+    <id>https://lnm011223.github.io/2021/11/20/Linux-system/</id>
     <published>2021-11-20T15:33:18.000Z</published>
     <updated>2022-04-04T10:35:20.004Z</updated>
     
@@ -209,21 +209,21 @@
     
     
     
-    <category term="学习" scheme="https://lnm011223.xyz/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://lnm011223.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="Linux" scheme="https://lnm011223.xyz/tags/Linux/"/>
+    <category term="Linux" scheme="https://lnm011223.github.io/tags/Linux/"/>
     
-    <category term="System Call" scheme="https://lnm011223.xyz/tags/System-Call/"/>
+    <category term="System Call" scheme="https://lnm011223.github.io/tags/System-Call/"/>
     
-    <category term="IPC" scheme="https://lnm011223.xyz/tags/IPC/"/>
+    <category term="IPC" scheme="https://lnm011223.github.io/tags/IPC/"/>
     
   </entry>
   
   <entry>
     <title>FineWeather开发记录</title>
-    <link href="https://lnm011223.xyz/2021/10/17/weather/"/>
-    <id>https://lnm011223.xyz/2021/10/17/weather/</id>
+    <link href="https://lnm011223.github.io/2021/10/17/weather/"/>
+    <id>https://lnm011223.github.io/2021/10/17/weather/</id>
     <published>2021-10-17T13:21:07.000Z</published>
     <updated>2022-04-04T10:36:09.717Z</updated>
     
@@ -232,17 +232,17 @@
     
     
     
-    <category term="开发" scheme="https://lnm011223.xyz/categories/%E5%BC%80%E5%8F%91/"/>
+    <category term="开发" scheme="https://lnm011223.github.io/categories/%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="Android" scheme="https://lnm011223.xyz/tags/Android/"/>
+    <category term="Android" scheme="https://lnm011223.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title>Linux kernel编译记录</title>
-    <link href="https://lnm011223.xyz/2021/10/10/Linux-kernel/"/>
-    <id>https://lnm011223.xyz/2021/10/10/Linux-kernel/</id>
+    <link href="https://lnm011223.github.io/2021/10/10/Linux-kernel/"/>
+    <id>https://lnm011223.github.io/2021/10/10/Linux-kernel/</id>
     <published>2021-10-10T08:54:22.000Z</published>
     <updated>2022-04-04T10:35:09.339Z</updated>
     
@@ -251,19 +251,19 @@
     
     
     
-    <category term="学习" scheme="https://lnm011223.xyz/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="学习" scheme="https://lnm011223.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="Linux" scheme="https://lnm011223.xyz/tags/Linux/"/>
+    <category term="Linux" scheme="https://lnm011223.github.io/tags/Linux/"/>
     
-    <category term="kernel" scheme="https://lnm011223.xyz/tags/kernel/"/>
+    <category term="kernel" scheme="https://lnm011223.github.io/tags/kernel/"/>
     
   </entry>
   
   <entry>
     <title>花束般的恋爱观后有感</title>
-    <link href="https://lnm011223.xyz/2021/09/16/huashu/"/>
-    <id>https://lnm011223.xyz/2021/09/16/huashu/</id>
+    <link href="https://lnm011223.github.io/2021/09/16/huashu/"/>
+    <id>https://lnm011223.github.io/2021/09/16/huashu/</id>
     <published>2021-09-16T02:30:31.000Z</published>
     <updated>2022-04-04T10:34:50.992Z</updated>
     
@@ -272,19 +272,19 @@
     
     
     
-    <category term="生活记录" scheme="https://lnm011223.xyz/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
+    <category term="生活记录" scheme="https://lnm011223.github.io/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"/>
     
     
-    <category term="感想" scheme="https://lnm011223.xyz/tags/%E6%84%9F%E6%83%B3/"/>
+    <category term="感想" scheme="https://lnm011223.github.io/tags/%E6%84%9F%E6%83%B3/"/>
     
-    <category term="电影" scheme="https://lnm011223.xyz/tags/%E7%94%B5%E5%BD%B1/"/>
+    <category term="电影" scheme="https://lnm011223.github.io/tags/%E7%94%B5%E5%BD%B1/"/>
     
   </entry>
   
   <entry>
     <title>git使用命令</title>
-    <link href="https://lnm011223.xyz/2021/09/14/git/"/>
-    <id>https://lnm011223.xyz/2021/09/14/git/</id>
+    <link href="https://lnm011223.github.io/2021/09/14/git/"/>
+    <id>https://lnm011223.github.io/2021/09/14/git/</id>
     <published>2021-09-14T14:32:31.000Z</published>
     <updated>2022-04-04T10:34:39.209Z</updated>
     
@@ -293,10 +293,10 @@
     
     
     
-    <category term="使用技巧" scheme="https://lnm011223.xyz/categories/%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <category term="使用技巧" scheme="https://lnm011223.github.io/categories/%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
     
     
-    <category term="git" scheme="https://lnm011223.xyz/tags/git/"/>
+    <category term="git" scheme="https://lnm011223.github.io/tags/git/"/>
     
   </entry>
   
